@@ -23,12 +23,21 @@ module.exports.__wbindgen_init_externref_table = function() {
     ;
 };
 
-const path = require('path').join(__dirname, 'foo_wasm_bg.wasm');
-const bytes = require('fs').readFileSync(path);
-
-const wasmModule = new WebAssembly.Module(bytes);
-const wasmInstance = new WebAssembly.Instance(wasmModule, imports);
-wasm = wasmInstance.exports;
+wasm = require('./foo_wasm_bg.wasm');
+if(typeof wasm === 'string') {
+  const bytes = require('fs').readFileSync(wasm);
+  const wasmModule = new WebAssembly.Module(bytes);
+  const wasmInstance = new WebAssembly.Instance(wasmModule, imports);
+  wasm = wasmInstance.exports;
+  module.exports.__wasm = wasm;
+}
+console.log(typeof wasm);
+//const path = require('path').join(__dirname, 'foo_wasm_bg.wasm');
+//const bytes = require('fs').readFileSync(path);
+//
+//const wasmModule = new WebAssembly.Module(bytes);
+//const wasmInstance = new WebAssembly.Instance(wasmModule, imports);
+//wasm = wasmInstance.exports;
 module.exports.__wasm = wasm;
 
 wasm.__wbindgen_start();

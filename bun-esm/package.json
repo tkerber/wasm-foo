@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "dependencies": {
-    "foo-wasm": "file:../foo-wasm/pkg-nodejs"
+    "foo-wasm": "file:../foo-wasm/pkg-unified"
   },
   "devDependencies": {
     "@types/bun": "latest"

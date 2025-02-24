@@ -15,6 +15,6 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "foo-wasm": "file:../foo-wasm/pkg-bundler"
+    "foo-wasm": "file:../foo-wasm/pkg-unified"
   }
 }

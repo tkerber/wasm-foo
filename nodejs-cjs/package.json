@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "foo-wasm": "file:../foo-wasm/pkg-nodejs"
+    "foo-wasm": "file:../foo-wasm/pkg-unified"
   },
   "author": "",
   "description": ""
