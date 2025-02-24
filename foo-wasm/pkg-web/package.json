@@ -1,0 +1,15 @@
+{
+  "name": "foo-wasm",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "foo_wasm_bg.wasm",
+    "foo_wasm.js",
+    "foo_wasm.d.ts"
+  ],
+  "main": "foo_wasm.js",
+  "types": "foo_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
