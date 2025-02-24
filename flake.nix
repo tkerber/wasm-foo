@@ -16,6 +16,8 @@
     devShells.default = pkgs.mkShell {
       packages = [
         pkgs.wasm-pack
+        pkgs.bun
+        pkgs.nodejs-18_x
         rustc
       ];
     };

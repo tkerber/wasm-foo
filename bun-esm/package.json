@@ -1,0 +1,14 @@
+{
+  "name": "bun-smoketest",
+  "module": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "foo-wasm": "file:../foo-wasm/pkg-nodejs"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
