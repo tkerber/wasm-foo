@@ -8,9 +8,11 @@
     "foo_wasm_bg.js",
     "foo_wasm.d.ts"
   ],
-  "browser": "foo_wasm.js",
-  "main": "foo_wasm_fs.js",
-  "types": "foo_wasm.d.ts",
+  "exports": {
+    "types": "./foo_wasm.d.ts",
+    "browser": "./foo_wasm.js",
+    "node": "./foo_wasm_fs.js"
+  },
   "sideEffects": [
     "./foo_wasm.js",
     "./snippets/*"
