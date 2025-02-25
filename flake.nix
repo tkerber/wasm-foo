@@ -19,6 +19,7 @@
         pkgs.bun
         pkgs.nodejs_23
         rustc
+        pkgs.playwright-test
       ];
     };
   });
