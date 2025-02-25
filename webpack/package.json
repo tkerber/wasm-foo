@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "type": "module",
   "scripts": {
     "serve": "webpack serve"
   },
@@ -10,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "file:../../../../../nix/store/zjg1fa0wfh3h5d5xpagwyvk4psshlxb1-playwright-test-1.50.1/lib/node_modules/@playwright/test",
+    "@types/node": "^22.13.5",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

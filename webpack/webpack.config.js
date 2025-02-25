@@ -1,10 +1,13 @@
-const path = require('path');
+import * as path from 'node:path';
+import * as url from 'node:url';
 
-module.exports = {
+const currentDir = path.dirname(url.fileURLToPath(import.meta.url));
+
+export default {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(currentDir, 'dist'),
   },
   experiments: {
     asyncWebAssembly: true,

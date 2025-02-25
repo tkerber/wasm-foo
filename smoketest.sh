@@ -12,3 +12,6 @@ popd > /dev/null
 pushd nodejs-cjs > /dev/null
   node index.cjs || echo 'nodejs (cjs) failed'
 popd > /dev/null
+pushd webpack > /dev/null
+  CI=true playwright test || echo 'webpack failed'
+popd > /dev/null
