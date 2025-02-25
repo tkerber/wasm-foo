@@ -17,7 +17,7 @@
       packages = [
         pkgs.wasm-pack
         pkgs.bun
-        pkgs.nodejs_23
+        pkgs.nodejs_18
         rustc
       ];
     };
